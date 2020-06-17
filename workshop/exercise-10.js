@@ -7,6 +7,9 @@
 // Returns true if every element of lst is of length at least 5.
 // Otherwise returns false.
 function allLong(lst) {
+  return lst.all(function (name){
+    return name.length > 4;
+  });
   // lst is an array of strings
 }
 // -------------------------------------------------------------------------
