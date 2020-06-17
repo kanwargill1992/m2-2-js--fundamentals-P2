@@ -31,7 +31,7 @@ const notCode = [
 // Q1.1
 // How many names does Morty have? (use grandson)
 let mortyFullname = grandson.split( ' ');
-let totalNames = mortyFullname.number;
+let totalNames = mortyFullname.length;
 console.log(totalNames);
 // Q1.2
 // Convert the alternateRicks string to an array. Console that array.
@@ -40,8 +40,8 @@ console.log(alternateRicksbox);
 // Q1.3
 // How many Ricks have been named in alternateRicks?
 let typsofRick =0;
-for (let i=0; i < alternateRicksArray.length;i++){
-  if (alternateRicksArray[i].includes('Rick')){
+for (let i=0; i < alternateRicksbox.length;i++){
+  if (alternateRicksbox[i].includes('Rick')){
     typsofRick +=1;
   }
 }
@@ -69,8 +69,5 @@ for (let i = 0; i < notCode.length; i++) {
 console.log(secretMessage);
 // Q1.6 (Stretch Goal)
 // Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
-let actualEnemies = enemies;
-for (let i = 0; i < ScaryTerry.length; i++) {
-  actualEnemies = actualEnemies.replace(ScaryTerry[i], '');
-}
-console.log(secretMessage);
+let actualEnemies = enemies.replace("Scary Terry", '')
+console.log(actualEnemies);
