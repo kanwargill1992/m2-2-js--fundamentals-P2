@@ -13,6 +13,7 @@ function keepLong(lst) {
 }
 // -------------------------------------------------------------------------
 console.log(
-  'Q5 keepLong()',
-  keepLong(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'])
+  "Q5 keepLong()",
+  keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );
+//V2
