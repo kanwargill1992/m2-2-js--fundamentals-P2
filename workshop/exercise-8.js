@@ -8,6 +8,9 @@
 // For example: greet(["bob", "eric"]) returns ["Hello bob", "Hello eric"]
 
 function greet(lst) {
+  const addHello = lst.array.forEach("Hello" => {
+    return .lst
+  });
   // lst is an array of strings
 }
 // -------------------------------------------------------------------------
