@@ -5,9 +5,18 @@
 // Also, wouldn't it be nice if there were a Math method that could simplify the code....
 // https://www.w3schools.com/jsreF/jsref_obj_math.asp
 
+function max(x,y){
+    return Math.max(x,y);
+    console.log(Math.max + '' + "is the bigger number");
+}
+
 // Q3.2
 // Without changing the function at all,
 // Can you figure out how we could use it to determine the greater number between 4 integers?
-
+function max(x,y){
+    return Math.max(w,x,y,z);
+    console.log(Math.max + '' + "is the bigger number");
+}
 // Q3.3
 // Would this work with more integers?
+YES
