@@ -9,30 +9,24 @@
 // <100 is A
 
 // Write function here
-function displayContent(){
-
-    for (const grade = 0; grade < numericalGrade.length; grade++) {
-if (gradeData[grade] >= 100) {
-
-    document.write( "" + nameData[grade] + "A");
-}
-else if (gradeData[grade]>= 90) {
-
-    document.write("" + nameData[i] + "B");
-}
-else if (gradeData[grade]>= 80) {
-    document.write("" + nameData[i] + "C");
-}
-else if (gradeData[grade]>= 70) {
-    document.write("" + nameData[i] + "D");
-}
-else  if (gradeData[grade]>=60){
-    document.write("" + nameData[i] + "F");
-}
+function displayContent(numericalGrade) {
+  for (let grade = 0; grade < numericalGrade.length; grade++) {
+    console.log("For grade: " + numericalGrade[grade]);
+    if (numericalGrade[grade] >= 90) {
+      console.log("A");
+    } else if (numericalGrade[grade] >= 80) {
+      console.log("B");
+    } else if (numericalGrade[grade] >= 70) {
+      console.log("C");
+    } else if (numericalGrade[grade] >= 60) {
+      console.log("D");
+    } else if (numericalGrade[grade] < 60) {
+      console.log("F");
     }
+  }
 }
 
-
-// Call the function with [48, 95, 65, 48, 59, 78, 72, 65]
+// Call the function with
+displayContent([48, 95, 65, 48, 59, 78, 72, 65]);
 
 // Try with other values as well
