@@ -6,10 +6,14 @@
 // Q7
 // Returns a new list with all the elements of lst that are length greater than 5
 function keepLong(lst) {
-  // lst is an array of strings
+  let bigFive = lst.filter(function (word) {
+    return word.length >= 5;
+  });
+  return bigFive;
 }
 // -------------------------------------------------------------------------
 console.log(
-  'Q5 keepLong()',
-  keepLong(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'])
+  "Q5 keepLong()",
+  keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );
+//V2
