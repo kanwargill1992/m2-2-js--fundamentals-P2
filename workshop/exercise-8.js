@@ -9,6 +9,9 @@
 
 function greet(lst) {
   // lst is an array of strings
+  return lst.map(function(num){
+    return `Hello ${num}`
+  })
 }
 // -------------------------------------------------------------------------
 console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));
