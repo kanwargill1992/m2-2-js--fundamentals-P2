@@ -9,6 +9,4 @@ function calculateAverage(grades) {
     });
         return Math.round(num / grades.length);
     }
-
-
 console.log(calculateAverage([76, 60, 83, 100, 78]));

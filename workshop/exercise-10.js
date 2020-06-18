@@ -7,14 +7,17 @@
 // Returns true if every element of lst is of length at least 5.
 // Otherwise returns false.
 function allLong(lst) {
+  return lst.every(function (name) {
+    return name.length > 4;
+  });
   // lst is an array of strings
   return lst.map(function(num){
     return num.length >= 5;
   })
 }
 // -------------------------------------------------------------------------
-console.log('Q8 - case 1', allLong(['Scott', 'Bob', 'Ric', 'Jim']));
+console.log("Q8 - case 1", allLong(["Scott", "Bob", "Ric", "Jim"]));
 console.log(
-  'Q8 - case 2',
-  allLong(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'])
+  "Q8 - case 2",
+  allLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );
