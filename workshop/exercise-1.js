@@ -40,8 +40,8 @@ console.log(newRicks);
 // Q1.3
 // How many Ricks have been named in alternateRicks?
 let numbRicks = 0;
-for (let i = 0; i < alternateRicks.length; i++) {
-  if (alternateRicks[i].includes("Rick")) {
+for (let i = 0; i < newRicks.length; i++) {
+  if (newRicks[i].includes("Rick")) {
     numbRicks += 1;
   }
 }
